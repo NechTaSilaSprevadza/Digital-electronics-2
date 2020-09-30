@@ -99,7 +99,7 @@ int main(void)
   92:	45 98       	cbi	0x08, 5	; 8
 
 	// Program uses 2 leds shining at once instead of 1 for more KnigtRideder style
-		PORTC = PORTC ^ (1<<LED_RED1);	// zapne 1
+		PORTC = PORTC ^ (1<<LED_RED1);	// turn 1 on
   94:	98 b1       	in	r25, 0x08	; 8
   96:	82 e0       	ldi	r24, 0x02	; 2
   98:	89 27       	eor	r24, r25
@@ -122,27 +122,27 @@ int main(void)
 		_delay_ms(BLINK_DELAY);
 	while (1)
 	{
-		PORTC = PORTC ^ (1<<LED_RED2);	// zapne 2
+		PORTC = PORTC ^ (1<<LED_RED2);	// turn 2 on
   ae:	24 e0       	ldi	r18, 0x04	; 4
 		_delay_ms(BLINK_DELAY);
-		PORTC = PORTC ^ (1<<LED_RED1);	// vypne 1
+		PORTC = PORTC ^ (1<<LED_RED1);	// turn 1 off
   b0:	52 e0       	ldi	r21, 0x02	; 2
-		PORTC = PORTC ^ (1<<LED_RED3);	// zapne 3
+		PORTC = PORTC ^ (1<<LED_RED3);	// turn 3 on
   b2:	98 e0       	ldi	r25, 0x08	; 8
 		_delay_ms(BLINK_DELAY);
-		PORTC = PORTC ^ (1<<LED_RED2);	// vypne 2
-		PORTC = PORTC ^ (1<<LED_RED4);	// zapne 4
+		PORTC = PORTC ^ (1<<LED_RED2);	// turn 2 off
+		PORTC = PORTC ^ (1<<LED_RED4);	// turn 4 on
   b4:	80 e1       	ldi	r24, 0x10	; 16
 		_delay_ms(BLINK_DELAY);
-		PORTC = PORTC ^ (1<<LED_RED3);	// vypne 3
-		PORTC = PORTC ^ (1<<LED_RED5);	// zapne 5
+		PORTC = PORTC ^ (1<<LED_RED3);	// turn 3 off
+		PORTC = PORTC ^ (1<<LED_RED5);	// turn 5 on
   b6:	40 e2       	ldi	r20, 0x20	; 32
 	// Program uses 2 leds shining at once instead of 1 for more KnigtRideder style
-		PORTC = PORTC ^ (1<<LED_RED1);	// zapne 1
+		PORTC = PORTC ^ (1<<LED_RED1);	// turn 1 on
 		_delay_ms(BLINK_DELAY);
 	while (1)
 	{
-		PORTC = PORTC ^ (1<<LED_RED2);	// zapne 2
+		PORTC = PORTC ^ (1<<LED_RED2);	// turn 2 on
   b8:	38 b1       	in	r19, 0x08	; 8
   ba:	32 27       	eor	r19, r18
   bc:	38 b9       	out	0x08, r19	; 8
@@ -156,11 +156,11 @@ int main(void)
   cc:	00 c0       	rjmp	.+0      	; 0xce <main+0x4e>
   ce:	00 00       	nop
 		_delay_ms(BLINK_DELAY);
-		PORTC = PORTC ^ (1<<LED_RED1);	// vypne 1
+		PORTC = PORTC ^ (1<<LED_RED1);	// turn 1 off
   d0:	38 b1       	in	r19, 0x08	; 8
   d2:	35 27       	eor	r19, r21
   d4:	38 b9       	out	0x08, r19	; 8
-		PORTC = PORTC ^ (1<<LED_RED3);	// zapne 3
+		PORTC = PORTC ^ (1<<LED_RED3);	// turn 3 on
   d6:	38 b1       	in	r19, 0x08	; 8
   d8:	39 27       	eor	r19, r25
   da:	38 b9       	out	0x08, r19	; 8
@@ -174,11 +174,11 @@ int main(void)
   ea:	00 c0       	rjmp	.+0      	; 0xec <main+0x6c>
   ec:	00 00       	nop
 		_delay_ms(BLINK_DELAY);
-		PORTC = PORTC ^ (1<<LED_RED2);	// vypne 2
+		PORTC = PORTC ^ (1<<LED_RED2);	// turn 2 off
   ee:	38 b1       	in	r19, 0x08	; 8
   f0:	32 27       	eor	r19, r18
   f2:	38 b9       	out	0x08, r19	; 8
-		PORTC = PORTC ^ (1<<LED_RED4);	// zapne 4
+		PORTC = PORTC ^ (1<<LED_RED4);	// turn 4 on
   f4:	38 b1       	in	r19, 0x08	; 8
   f6:	38 27       	eor	r19, r24
   f8:	38 b9       	out	0x08, r19	; 8
@@ -192,11 +192,11 @@ int main(void)
  108:	00 c0       	rjmp	.+0      	; 0x10a <main+0x8a>
  10a:	00 00       	nop
 		_delay_ms(BLINK_DELAY);
-		PORTC = PORTC ^ (1<<LED_RED3);	// vypne 3
+		PORTC = PORTC ^ (1<<LED_RED3);	// turn 3 off
  10c:	38 b1       	in	r19, 0x08	; 8
  10e:	39 27       	eor	r19, r25
  110:	38 b9       	out	0x08, r19	; 8
-		PORTC = PORTC ^ (1<<LED_RED5);	// zapne 5
+		PORTC = PORTC ^ (1<<LED_RED5);	// turn 5 on
  112:	38 b1       	in	r19, 0x08	; 8
  114:	34 27       	eor	r19, r20
  116:	38 b9       	out	0x08, r19	; 8
@@ -210,7 +210,7 @@ int main(void)
  126:	00 c0       	rjmp	.+0      	; 0x128 <main+0xa8>
  128:	00 00       	nop
 		_delay_ms(BLINK_DELAY);
-		PORTC = PORTC ^ (1<<LED_RED4);	// vypne 4
+		PORTC = PORTC ^ (1<<LED_RED4);	// turn 4 off
  12a:	38 b1       	in	r19, 0x08	; 8
  12c:	38 27       	eor	r19, r24
  12e:	38 b9       	out	0x08, r19	; 8
@@ -224,7 +224,7 @@ int main(void)
  13e:	00 c0       	rjmp	.+0      	; 0x140 <main+0xc0>
  140:	00 00       	nop
 		_delay_ms(BLINK_DELAY);
-		PORTC = PORTC ^ (1<<LED_RED4);	// zapne 4
+		PORTC = PORTC ^ (1<<LED_RED4);	// turn 4 on 
  142:	38 b1       	in	r19, 0x08	; 8
  144:	38 27       	eor	r19, r24
  146:	38 b9       	out	0x08, r19	; 8
@@ -238,11 +238,11 @@ int main(void)
  156:	00 c0       	rjmp	.+0      	; 0x158 <main+0xd8>
  158:	00 00       	nop
 		_delay_ms(BLINK_DELAY);
-		PORTC = PORTC ^ (1<<LED_RED5);	// vypne 5
+		PORTC = PORTC ^ (1<<LED_RED5);	// turn 5 off
  15a:	38 b1       	in	r19, 0x08	; 8
  15c:	34 27       	eor	r19, r20
  15e:	38 b9       	out	0x08, r19	; 8
-		PORTC = PORTC ^ (1<<LED_RED3);	// zapne 3
+		PORTC = PORTC ^ (1<<LED_RED3);	// turn 3 on
  160:	38 b1       	in	r19, 0x08	; 8
  162:	39 27       	eor	r19, r25
  164:	38 b9       	out	0x08, r19	; 8
@@ -256,11 +256,11 @@ int main(void)
  174:	00 c0       	rjmp	.+0      	; 0x176 <main+0xf6>
  176:	00 00       	nop
 		_delay_ms(BLINK_DELAY);
-		PORTC = PORTC ^ (1<<LED_RED4);	// vypne 4
+		PORTC = PORTC ^ (1<<LED_RED4);	// turn 4 off
  178:	38 b1       	in	r19, 0x08	; 8
  17a:	38 27       	eor	r19, r24
  17c:	38 b9       	out	0x08, r19	; 8
-		PORTC = PORTC ^ (1<<LED_RED2);	// zapne 2
+		PORTC = PORTC ^ (1<<LED_RED2);	// turn 2 on
  17e:	38 b1       	in	r19, 0x08	; 8
  180:	32 27       	eor	r19, r18
  182:	38 b9       	out	0x08, r19	; 8
@@ -274,11 +274,11 @@ int main(void)
  192:	00 c0       	rjmp	.+0      	; 0x194 <main+0x114>
  194:	00 00       	nop
 		_delay_ms(BLINK_DELAY);
-		PORTC = PORTC ^ (1<<LED_RED3);	// vypne 3
+		PORTC = PORTC ^ (1<<LED_RED3);	// turn 3 off
  196:	38 b1       	in	r19, 0x08	; 8
  198:	39 27       	eor	r19, r25
  19a:	38 b9       	out	0x08, r19	; 8
-		PORTC = PORTC ^ (1<<LED_RED1);	// zapne 1
+		PORTC = PORTC ^ (1<<LED_RED1);	// turn 1 on
  19c:	38 b1       	in	r19, 0x08	; 8
  19e:	35 27       	eor	r19, r21
  1a0:	38 b9       	out	0x08, r19	; 8
@@ -292,7 +292,7 @@ int main(void)
  1b0:	00 c0       	rjmp	.+0      	; 0x1b2 <main+0x132>
  1b2:	00 00       	nop
 		_delay_ms(BLINK_DELAY);
-		PORTC = PORTC ^ (1<<LED_RED2);	// vypne 2
+		PORTC = PORTC ^ (1<<LED_RED2);	// turn 2 off
  1b4:	38 b1       	in	r19, 0x08	; 8
  1b6:	32 27       	eor	r19, r18
  1b8:	38 b9       	out	0x08, r19	; 8
