@@ -1,13 +1,4 @@
-/***********************************************************************
- * 
- * Alternately toggle two LEDs when a push button is pressed.
- * ATmega328P (Arduino Uno), 16 MHz, AVR 8-bit Toolchain 3.6.2
- *
- * Copyright (c) 2018-2020 Tomas Fryza
- * Dept. of Radio Electronics, Brno University of Technology, Czechia
- * This work is licensed under the terms of the MIT license.
- * 
- **********************************************************************/
+// Lab_02 - leds
 
 /* Defines -----------------------------------------------------------*/
 #define LED_GREEN   PB5     // AVR pin where green LED is connected
@@ -23,10 +14,6 @@
 #include <avr/io.h>         // AVR device-specific IO definitions
 
 /* Functions ---------------------------------------------------------*/
-/**
- * Main function where the program execution begins. Toggle two LEDs 
- * when a push button is pressed.
- */
 int main(void)
 {
     /* GREEN LED */
