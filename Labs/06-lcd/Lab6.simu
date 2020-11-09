@@ -1,0 +1,36 @@
+<circuit speed="1000000" noLinAcc="5" reactStep="50" animate="0" type="simulide_0.4">
+ 
+Ground-3: 
+<item valLabRot="0" hflip="1" objectName="Ground-3" y="-140" labelrot="0" valLabely="0" labely="8" Show_id="false" rotation="0" itemtype="Ground" id="Ground-3" x="-460" valLabelx="0" vflip="1" labelx="-16"/>
+ 
+atmega328-2: 
+<item id="atmega328-2" objectName="atmega328-2" labely="-20" valLabelx="0" hflip="1" Auto_Load="false" Logic_Symbol="false" Show_id="true" x="-240" Program="" labelrot="0" Init_gdb="false" valLabely="0" itemtype="AVR" y="-204" Mhz="16" eeprom="" rotation="0" vflip="1" labelx="0" valLabRot="0"/>
+ 
+Hd44780-1: 
+<item Cols="16" valLabRot="0" hflip="1" Rows="2" objectName="Hd44780-1" y="-184" labelrot="0" valLabely="0" labely="-82" Show_id="true" rotation="0" itemtype="Hd44780" id="Hd44780-1" x="-484" valLabelx="0" vflip="1" labelx="70"/>
+ 
+Connector-4: 
+<item endpinid="Ground-3-Gnd" id="Connector-4" objectName="Connector-4" labely="-24" valLabelx="0" hflip="1" Show_id="false" enodeid="enode-4" x="-460" startpinid="Hd44780-1-PinRW" labelrot="0" pointList="-460,-176,-460,-156" valLabely="0" itemtype="Connector" y="-176" rotation="0" vflip="1" labelx="-16" valLabRot="0"/>
+ 
+Connector-5: 
+<item endpinid="Hd44780-1-dataPin4" id="Connector-5" objectName="Connector-5" labely="-24" valLabelx="0" hflip="1" Show_id="false" enodeid="enode-5" x="-248" startpinid="atmega328-2-PD4" labelrot="0" pointList="-248,-156,-412,-156,-412,-176" valLabely="0" itemtype="Connector" y="-156" rotation="0" vflip="1" labelx="-16" valLabRot="0"/>
+ 
+Connector-6: 
+<item endpinid="Hd44780-1-dataPin5" id="Connector-6" objectName="Connector-6" labely="-24" valLabelx="0" hflip="1" Show_id="false" enodeid="enode-6" x="-248" startpinid="atmega328-2-PD5" labelrot="0" pointList="-248,-116,-404,-116,-404,-176" valLabely="0" itemtype="Connector" y="-116" rotation="0" vflip="1" labelx="-16" valLabRot="0"/>
+ 
+Connector-7: 
+<item endpinid="Hd44780-1-dataPin6" id="Connector-7" objectName="Connector-7" labely="-24" valLabelx="0" hflip="1" Show_id="false" enodeid="enode-7" x="-248" startpinid="atmega328-2-PD6" labelrot="0" pointList="-248,-108,-396,-108,-396,-176" valLabely="0" itemtype="Connector" y="-108" rotation="0" vflip="1" labelx="-16" valLabRot="0"/>
+ 
+Connector-8: 
+<item endpinid="Hd44780-1-dataPin7" id="Connector-8" objectName="Connector-8" labely="-24" valLabelx="0" hflip="1" Show_id="false" enodeid="enode-8" x="-248" startpinid="atmega328-2-PD7" labelrot="0" pointList="-248,-100,-388,-100,-388,-176" valLabely="0" itemtype="Connector" y="-100" rotation="0" vflip="1" labelx="-16" valLabRot="0"/>
+ 
+Connector-9: 
+<item endpinid="Hd44780-1-PinRS" id="Connector-9" objectName="Connector-9" labely="-24" valLabelx="0" hflip="1" Show_id="false" enodeid="enode-9" x="-248" startpinid="atmega328-2-PB0" labelrot="0" pointList="-248,-92,-468,-92,-468,-176" valLabely="0" itemtype="Connector" y="-92" rotation="0" vflip="1" labelx="-16" valLabRot="0"/>
+ 
+Connector-10: 
+<item endpinid="Hd44780-1-PinEn" id="Connector-10" objectName="Connector-10" labely="-24" valLabelx="0" hflip="1" Show_id="false" enodeid="enode-10" x="-200" startpinid="atmega328-2-PB1" labelrot="0" pointList="-200,-92,-188,-92,-188,-76,-452,-76,-452,-176" valLabely="0" itemtype="Connector" y="-92" rotation="0" vflip="1" labelx="-16" valLabRot="0"/>
+ 
+PlotterWidget: 
+<item maximumHeight="200" enabled="true" windowOpacity="1" cursor="" windowFilePath="" styleSheet="" minimized="false" minimumSize="" isActiveWindow="true" accessibleDescription="" frameSize="" windowIcon="" sizeHint="" windowModality="0" focus="false" windowModified="false" maximumSize="" maximized="false" sizePolicy="" minimumHeight="200" rect="" size="" windowTitle="" visible="false" frameGeometry="" x="0" itemtype="Plotter" acceptDrops="false" accessibleName="" maximumWidth="1000" objectName="PlotterWidget" fullScreen="false" Tracks="1" statusTip="" childrenRegion="" sizeIncrement="" width="200" toolTipDuration="-1" baseSize="" autoFillBackground="false" contextMenuPolicy="1" whatsThis="" modal="false" minimumSizeHint="" MinVolt="-500" height="200" y="0" MaxVolt="500" Scale="1" childrenRect="" focusPolicy="0" layoutDirection="0" normalGeometry="" toolTip="" palette="" geometry="" windowIconText="" inputMethodHints="0" font="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" minimumWidth="200" updatesEnabled="true" mouseTracking="false" locale="" pos=""/>
+ 
+</circuit>
