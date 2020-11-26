@@ -21,7 +21,7 @@ R-2R D/A prevodník prevádza 8-bitovú postupnosť 2 hodnôt napätia 0V a 5V n
 
 ## Popis zdrojového kódu a simulácie
 
-[Link na adresár projektu na GitHube](https://github.com/NechTaSilaSprevadza/Digital-electronics-2/tree/master/Labs/project)
+Link na adresár [projektu](https://github.com/NechTaSilaSprevadza/Digital-electronics-2/tree/master/Labs/project) na GitHube 
 
 ### Schéma zapojenia
 ![Schéma zapojenia](Images/SchemaZapojenia.png)
