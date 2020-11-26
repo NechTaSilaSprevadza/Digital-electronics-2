@@ -34,7 +34,8 @@ R-2R D/A prevodník prevádza 8-bitovú postupnosť 2 hodnôt napätia 0V a 5V n
 
 
 ## Video
-![Video](Video/Video.mp4)
+![Video - na stiahnutie](Video/Video.mp4)
+![Video - na pozretie](https://drive.google.com/file/d/1nHFWSgAs_humQwwQS_2yR3hbuxNF-2Kv/view?usp=sharing)
 
 
 ## Referencie
