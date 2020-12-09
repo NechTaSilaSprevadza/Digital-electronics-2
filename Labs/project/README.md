@@ -27,7 +27,6 @@ Link na adresár [projektu](https://github.com/NechTaSilaSprevadza/Digital-elect
 ![Schéma zapojenia](Images/SchemaZapojenia.png)
 
 ### Vývojový diagram
-![Vývojový diagram](Images/VyvojovyDiagram.png)
 
 ### Popis zdrojového kódu
 
