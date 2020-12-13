@@ -11,7 +11,7 @@ Popis funkcie R-2R digitálno-analógového prevodníku (DAC). Aplikácia gener�
 Použitý hardware:
 Mikrokontrolér ATmega328P
 Displej HD44780 2x16 znakov
-Klávesnica 4x3
+Klávesnica 4x3 
 8-bitový R-2R D/A prevodník 
 
 Mikrokontrolér obsahuje program, ktorý bude generovať signál na výstupe externého D/A prevodníka takého tvaru, aký si používateľ zvolí podľa čísla na klávesnici.
